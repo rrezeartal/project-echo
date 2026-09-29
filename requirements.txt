@@ -1,0 +1,19 @@
+# Install the CUDA build of torch first, e.g.:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu124
+torch>=2.4
+transformers>=4.56
+peft>=0.13
+accelerate>=1.0
+datasets[audio]>=3.0
+jiwer>=3.0
+sentence-transformers>=3.0
+bitsandbytes>=0.45
+librosa>=0.10
+soundfile>=0.12
+chainlit>=2.7
+python-dotenv>=1.0
+matplotlib>=3.8
+pandas>=2.0
+tensorboard>=2.16
+tqdm>=4.66
+ipykernel>=6.29

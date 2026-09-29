@@ -1,0 +1,11 @@
+outputs/
+data/
+results/
+.env
+.files/
+.chainlit/translations/
+chainlit.md
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
