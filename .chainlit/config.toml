@@ -1,0 +1,32 @@
+[project]
+enable_telemetry = false
+user_env = []
+session_timeout = 3600
+user_session_timeout = 1296000
+cache = false
+# Local-only app; add your host here if you serve it on another port or machine.
+allow_origins = ["http://localhost:8000", "http://127.0.0.1:8000"]
+
+[features]
+unsafe_allow_html = false
+latex = false
+edit_message = false
+
+[features.spontaneous_file_upload]
+enabled = true
+accept = ["audio/*"]
+max_files = 1
+max_size_mb = 50
+
+[features.audio]
+enabled = true
+# Whisper expects 16 kHz, so the browser records at that rate directly.
+sample_rate = 16000
+
+[UI]
+name = "Project Echo ASR"
+default_theme = "light"
+cot = "hidden"
+
+[meta]
+generated_by = "2.7.0"
